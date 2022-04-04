@@ -1,5 +1,3 @@
-const IncomeMultiplier = require("./IncomeMultiplier");
-
 module.exports = class HouseLoanCalculator {
     getLoan(age, income) {
         let loan = 100000;
@@ -8,6 +6,6 @@ module.exports = class HouseLoanCalculator {
             loan *= 2;
         }
 
-        return IncomeMultiplier.multiply(loan, income);
+        return loan;
     }
 }

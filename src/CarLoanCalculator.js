@@ -1,7 +1,7 @@
 const IncomeMultiplier = require('./IncomeMultiplier');
 
 module.exports = class CarLoanCalculator {
-    getLoan(age, income) {
+    getLoan(age) {
         let loan = 2000;
 
         if (age > 50) {
@@ -10,6 +10,6 @@ module.exports = class CarLoanCalculator {
             loan += 1000;
         }
 
-        return IncomeMultiplier.multiply(loan, income);
+        return loan;
     }
 }
